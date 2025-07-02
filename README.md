@@ -1,8 +1,9 @@
 # `BLEacon`
 
 ---
-James Cranley
-July 2025
+
+James Cranley, July 2025
+
 ---
 
 A lightweight ESP32-based RSSI logger and display for BLE beacons.
