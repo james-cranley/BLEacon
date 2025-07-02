@@ -1,5 +1,6 @@
 /*********************************************************************
-  Shelly BLU dashboard – smooth incremental refresh
+  Tracks the presence of a single BLE beacon
+  User supplies: MAC, SSID/paswword (for time)
   Board : Waveshare ESP32-S3-LCD-1.47 (ST7789 – glass 172 × 320)
 *********************************************************************/
 #include <Arduino.h>
