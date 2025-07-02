@@ -6,6 +6,7 @@ This will be able to log the per-second signal intensity (and thereby inferred d
 ## Hardware used
 
 [Waveshare ESP32-S3-LCD-1.47](https://www.waveshare.com/wiki/ESP32-S3-LCD-1.47)
+
 [Shelly BLU Button1](https://www.shelly.com/blogs/documentation/shellyblu-button1)
 
 ## Installation
