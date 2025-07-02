@@ -82,7 +82,7 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
   - `Adafruit GFX Library`
   - `Adafruit ST7789 Library`
 
-![Board](/images/arduino-libraries.png)
+![Board](/images/arduino-library.png)
 
 ---
 
