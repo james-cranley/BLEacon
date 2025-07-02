@@ -111,15 +111,27 @@ The device will:
 - Display current **UTC time**, **MAC**, **SSID**, and **RSSI**.
 - Render a **signal strength bar chart**.
 
-## To-Do
+---
 
-- [] Add logging
+## 🚧 TODO: Add SD Card Logging
 
-- Log one row per BLE detection to `/data/log.csv` on SD:
+- [ ] Create a `log.csv` file on `/data/` if one does not exist.
+  - Include header: `timestamp,rssi,mac,ssid`
+- [ ] Append a row per second **only when**:
+  - A valid UTC timestamp is available
+  - A BLE signal from the target MAC is received
 
-  ```
-  timestamp,rssi,mac,ssid
-  1720000000,-65,A4:C1:38:12:34:56,ShellyTag
-  ```
+**Example format:**
+```csv
+timestamp,rssi,mac,ssid
+1720000000,-65,A4:C1:38:12:34:56,James's Wi-Fi Network
+```
 
-> 🗒️ Only entries with valid UTC timestamps are logged (i.e., after Wi-Fi sync is successful).
+---
+
+## 🚧 TODO: Add Multi-Tag Tracking
+
+- [ ] Accept a list of BLE beacon MAC addresses (not just one).
+- [ ] Log signal strength for all discovered beacons per second.
+- [ ] Display up to 2 devices on-screen at once (strongest RSSI).
+- [ ] Optionally rotate or scroll display if >2 beacons are active.
