@@ -10,6 +10,8 @@ A lightweight ESP32-based RSSI logger and display for BLE beacons.
 This project uses the Waveshare ESP32-S3-LCD-1.47 microcontroller with integrated LCD to monitor signal strength (RSSI) from a specific BLE beacon—typically a [Shelly BLU Button1](https://www.shelly.com/blogs/documentation/shellyblu-button1).  
 It displays live signal strength as text and signal bars, syncs its clock over NTP, and logs data to SD card.
 
+![BLEacon](/images/BLEacon.png)
+
 ---
 
 ## Hardware
@@ -58,7 +60,7 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
   - **Board**: “WAVESHARE ESP32-S3 LCD 1.47”
   - **Port**: Your device’s USB connection
 
-📸 *Image: `/images/arduino-connection.png`*
+![Connection](/images/arduino-connection.png)
 
 ---
 
@@ -68,7 +70,7 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
 - Search for **`esp32` by Espressif Systems**.
 - Install the latest version.
 
-📸 *Image: `/images/arduino-board.png`*
+![Board](/images/arduino-board.png)
 
 ---
 
@@ -79,7 +81,7 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
   - `Adafruit GFX Library`
   - `Adafruit ST7789 Library`
 
-📸 *Image: `/images/arduino-libraries.png`*
+![Board](/images/arduino-libraries.png)
 
 ---
 
