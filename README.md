@@ -88,19 +88,11 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
 
 ### 5. Load the Sketch
 
-- Open the file: `/src/single.ino`
+- Open the file: `/src/multi_MAC_with_logging.ino`
 - Fill in:
-  - The **MAC address** of your Shelly tag
+  - The **MAC addresses** of your Shelly tags
   - Your **Wi-Fi credentials** for NTP time sync
-- Upload to the device:
-
-  ```cpp
-  const char* WIFI_SSID = "your-wifi";
-  const char* WIFI_PASS = "your-password";
-  const char  TAG_MAC[] = "A4:C1:38:12:34:56"; // your beacon's MAC
-  ```
-
-- Click the **Upload** button in the IDE.
+- Upload to the device: Click the **Upload** button in the IDE.
 
 ---
 
@@ -109,29 +101,5 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
 The device will:
 
 - Display current **UTC time**, **MAC**, **SSID**, and **RSSI**.
-- Render a **signal strength bar chart**.
-
+- It will log data to the on-baord micro SD card
 ---
-
-## 🚧 TODO: Add SD Card Logging
-
-- [ ] Create a `log.csv` file on `/data/` if one does not exist.
-  - Include header: `timestamp,rssi,mac,ssid`
-- [ ] Append a row per second **only when**:
-  - A valid UTC timestamp is available
-  - A BLE signal from the target MAC is received
-
-**Example format:**
-```csv
-timestamp,rssi,mac,ssid
-1720000000,-65,A4:C1:38:12:34:56,James's Wi-Fi Network
-```
-
----
-
-## 🚧 TODO: Add Multi-Tag Tracking
-
-- [ ] Accept a list of BLE beacon MAC addresses (not just one).
-- [ ] Log signal strength for all discovered beacons per second.
-- [ ] Display up to 2 devices on-screen at once (strongest RSSI).
-- [ ] Optionally rotate or scroll display if >2 beacons are active.
