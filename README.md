@@ -107,3 +107,4 @@ The device will:
 ## References
 
 [NHS Digital](https://digital.nhs.uk/services/networks-and-connectivity-transformation-frontline-capabilities/connectivity-hub/advice-and-guidance/rtls-guidance)
+[Marini2020](http://dx.doi.org/10.2196/19874)
