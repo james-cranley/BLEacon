@@ -103,3 +103,7 @@ The device will:
 - Display current **UTC time**, **MAC**, **SSID**, and **RSSI**.
 - It will log data to the on-baord micro SD card
 ---
+
+## References
+
+[NHS Digital](https://digital.nhs.uk/services/networks-and-connectivity-transformation-frontline-capabilities/connectivity-hub/advice-and-guidance/rtls-guidance)
