@@ -94,6 +94,8 @@ Ensure your Shelly BLU Button1 is in **Beacon Mode**:
   - Your **Wi-Fi credentials** for NTP time sync
 - Upload to the device: Click the **Upload** button in the IDE.
 
+If you get a `Bad CPU Type` error, then install `rosetta2` (which is tiny), using `softwareupdate --install-rosetta`
+
 ---
 
 ## Output
